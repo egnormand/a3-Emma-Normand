@@ -14,12 +14,14 @@
   "author": "",
   "dependencies": {
     "bootstrap": "^5.3.8",
+    "dotenv": "^17.2.2",
     "express": "^5.2.1",
     "mongoose": "^9.10.0"
   },
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
   }
 }
