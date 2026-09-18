@@ -1,103 +1,33 @@
-Assignment 3 - Persistence: Two-tier Web Application with Database, Express server, and CSS template
-===
-
-Due: September 15th, by 1:59 PM.
-
-This assignment continues where we left off in A2, extending it to use a popular Node.js server framework (express), a database (mongodb), and a CSS application framework / template of your choice (Bootstrap, Material Design, Semantic UI, Pure etc.)
-
-Baseline Requirements
----
-
-Your application is required to implement the following functionalities:
-
-- a `Server`, created using Express (no alternatives will be accepted for this assignment)
-- a `Results` functionality which shows all data associated with a logged in user (except passwords)
-- a `Form/Entry` functionality which allows users to add, modify, and delete data items (must be all three!) associated with their user name / account. 
-- Persistent data storage in between server sessions using [mongodb](https://www.mongodb.com/cloud/atlas) (you *must* use mongodb for this assignment). You can use either the [official mongodb node.js library](https://www.npmjs.com/package/mongodb) or use the [Mongoose library](https://www.npmjs.com/package/mongoose), which enables you to define formal schemas for your database. Please be aware that the course staff cannot provide in-depth support for use of Mongoose.  
-- Use of a [CSS framework or template](https://github.com/troxler/awesome-css-frameworks). 
-This should do the bulk of your styling/CSS for you and be appropriate to your application. 
-For example, don't use [NES.css](https://nostalgic-css.github.io/NES.css/) (which is awesome!) unless you're creating a game or some type of retro 80s site.
-
-Your application is required to demonstrate the use of the following concepts:  
-
-HTML:  
-- HTML input tags and form fields of various flavors (`<textarea>`, `<input>`, checkboxes, radio buttons etc.)
-- HTML that can display all data *for a particular authenticated user*. Note that this is different from the last assignnment, which required the display of all data in memory on the server.
-
-Note that it might make sense to have two pages for this assignment, one that handles login / authentication, and one that contains the rest of your application.
-For example, when visiting the home page for the assignment, users could be presented with a login form. After submitting the login form, if the login is 
-successful, they are taken to the main application. If they fail, they are sent back to the login to try again. For this assignment, it is acceptable to simply create 
-new user accounts upon login if none exist, however, you must alert your users to this fact.  
-
-CSS:  
-- CSS styling should primarily be provided by your chosen template/framework. 
-Oftentimes a great deal of care has been put into designing CSS templates; 
-don't override their stylesheets unless you are extremely confident in your graphic design capabilities. 
-The idea is to use CSS templates that give you a professional looking design aesthetic without requiring you to be a graphic designer yourself.
-
-JavaScript:  
-- At minimum, a small amount of front-end JavaScript to get / fetch data from the server. 
-See the [previous assignment](https://github.com/cs-4241-23/shortstack) for reference.
-
-Node.js:  
-- A server using Express and a persistent database (mongodb).
-
-General:  
-- Your site should achieve at least 90% on the `Performance`, `Best Practices`, `Accessibility`, and `SEO` tests 
-using Google [Lighthouse](https://developers.google.com/web/tools/lighthouse) (don't worry about the PWA test, and don't worry about scores for mobile devices).
-Test early and often so that fixing problems doesn't lead to suffering at the end of the assignment. 
-
-Deliverables
----
-
-Do the following to complete this assignment:
-
-1. Implement your project with the above requirements. I'd begin by converting your A2 assignment. First, change the server to use express. Then, modify the server to use mongodb instead of storing data locally. Last but not least, implement user accounts and login. User accounts and login is often the hardest part of this assignment, so budget your time accordingly.
-2. Deploy your project to Render and fill in the appropriate fields in your package.json file.
-3. Test your project to make sure that when someone goes to your main page on Render, it displays correctly.
-4. Ensure that your project has the proper naming scheme `a3-yourfirstname-yourlastname` so we can find it.
-5. Fork this repository and modify the README to the specifications below.
-6. Create and submit a Pull Request to the original repo. Name the pull request using the following template: `a3-firstname-lastname`.
-
-Achievements
----
-
-Below are suggested technical and design achievements. You can use these to help boost your grade up to an A and customize the 
-assignment to your personal interests, for a maximum twenty additional points and a maximum grade of a 100%. 
-These are recommended achievements, but feel free to create/implement your own... just make sure you thoroughly describe what you did in your README, 
-why it was challenging, and how many points you think the achievement should be worth. 
-ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM.
-
-*Technical*
-- Implimented a Signup/Login feature that does not allow users to make multiple accounts with the same name.
-- (10 points) Implement OAuth authentication, perhaps with a library like [passport.js](http://www.passportjs.org/). 
-*You must either use Github authenticaion or provide a username/password to access a dummy account*. 
-Course staff cannot be expected, for example, to have a personal Facebook, Google, or Twitter account to use when grading this assignment. 
-Please contact the course staff if you have any questions about this. This is the hardest achievement in Webware; you have been warned!  
-- (5 points) Get 100% (not 98%, not 99%, but 100%) in all four lighthouse tests required for this assignment.
-- (up to 5 points) List up to five Express middleware packages you used and a short (one sentence) summary of what each one does. THESE MUST BE SEPARATE PACKAGES THAT YOU INSTALL VIA NPM, NOT THE ONES INCLUDED WITH EXPRESS. So express.json and express.static don't count here. For a starting point on middleware, see [this list](https://expressjs.com/en/resources/middleware.html).
-
-*Design/UX*
-- (10 points) Make your site accessible using the [resources and hints available from the W3C](https://www.w3.org/WAI/), Implement/follow twelve tips from their [tips for writing](https://www.w3.org/WAI/tips/writing/), [tips for designing](https://www.w3.org/WAI/tips/designing/), and [tips for development](https://www.w3.org/WAI/tips/developing/). *Note that all twelve must require active work on your part*. 
-For example, even though your page will most likely not have a captcha, you don't get this as one of your twelve tips to follow because you're effectively 
-getting it "for free" without having to actively change anything about your site. 
-Contact the course staff if you have any questions about what qualifies and doesn't qualify in this regard. 
-List each tip that you followed and describe what you did to follow it in your site.
----
-
 ## To-Do List
 
-A link to your project running on render.
+-**Render Link**: 
 
-Include a very brief summary of your project here. Images are encouraged, along with concise, high-level text. Be sure to include:
+## Program Rundown
 
-- Allow users to create and edit a private to-do list.
-- I had difficulty with collecting the data from my website and putting it into the MongoDB server.
-- I chose to use a username and login authentication because there were multiple resources online that could walk me through it.
-- I used the bootstrap CSS framework in addition to my own custom CSS. I used these because I believed them to be aesthetically pleasing and thematically match my application.
+- **Goal**: Allow users to create and edit a private to-do list.
+- **Challenges**: I had difficulty with collecting the data from my website and putting it into the MongoDB server.
+- **Authentication**: I chose to use a username and login authentication because there were multiple resources online that could walk me through it.
+- **CSS Design**: I used the bootstrap CSS framework in addition to my own custom CSS. I used these because I believed them to be aesthetically pleasing and thematically match my application.
 
 ## Technical Achievements
-- **Tech Achievement 1**: I implimented a more complex Signup/Login feature that does not allow users to make multiple accounts with the same name and throw descriptive errors when fields are not filled out.
+- **Tech Achievement 0**: Uses MongoDB and Express to store user information as opposed to saving the information locally
+- **Tech Achievement 1**: I implimented a more complex Signup/Login feature that does not allow users to make multiple accounts with the same name and throw descriptive errors when fields are not filled out/incorrect
 
-### Design/Evaluation Achievements
-- **Design Achievement 1**: I followed the following tips from the W3C Web Accessibility Initiative...
+## Design/Evaluation Achievements
+- **Design Achievement 0**: Scores 90+ on all required Lighthouse tests
+- **Design Achievement 1**: I followed the following tips from the W3C Web Accessibility Initiative: 
+1) Using headings to provide meaning and structure (ex. content page)
+2) Using the link text to describe the target page (ex. signup page bottom)
+3) Use meaningful image text alternatives (ex. content page)
+4) Provide the user with clear instructions (ex. my errors at login/signup)
+5) Provide sufficent contrast between background and text
+6) Use more than color to convey information (ex. my errors at login/signup)
+7) Provide clear and consistent navigation options (ex. constant page titles and relevant links at the bottom)
+10) Provide easily identifyable feedback (ex. my errors at login/signup)
+11) Provide informative, unique page titles
+12) Keep content clear and concise (ex. this is subjective but I believe I did it!)
+
+
+## Sources/References
+- **Login/Signup Pages**: I primarily referenced this video to creat my login and signup pages, as well as their js (https://www.youtube.com/watch?v=bVl5_UdcAy0)
+- **MongoDB and Express Functionality**: I primarily referenced this video to help me set up the MongoDB and Express communication (https://www.youtube.com/watch?v=fgTGADljAeg)

@@ -30,7 +30,7 @@ async function requestJson(url, options){
     try {
         data = responseText ? JSON.parse(responseText) : {};
     } catch {
-        throw new Error("The todo API returned HTML instead of JSON. Open content.html at http://localhost:3000/content.html and restart the server.");
+        throw new Error("The todo API returned HTML instead of JSON. Open todo.html at http://localhost:3000/todo.html and restart the server.");
     }
 
     if(!response.ok){

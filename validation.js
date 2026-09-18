@@ -25,7 +25,7 @@ form.addEventListener('submit', (e) =>{
     }
 
     const endpoint = repeat_password_input ? '/users' : '/users/login'
-    const successPage = repeat_password_input ? 'login.html' : 'content.html'
+    const successPage = repeat_password_input ? 'login.html' : 'todo.html'
 
     fetch(endpoint, {
             method: 'POST',
