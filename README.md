@@ -69,6 +69,7 @@ why it was challenging, and how many points you think the achievement should be 
 ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM.
 
 *Technical*
+- Implimented a Signup/Login feature that does not allow users to make multiple accounts with the same name.
 - (10 points) Implement OAuth authentication, perhaps with a library like [passport.js](http://www.passportjs.org/). 
 *You must either use Github authenticaion or provide a username/password to access a dummy account*. 
 Course staff cannot be expected, for example, to have a personal Facebook, Google, or Twitter account to use when grading this assignment. 
@@ -82,30 +83,21 @@ For example, even though your page will most likely not have a captcha, you don'
 getting it "for free" without having to actively change anything about your site. 
 Contact the course staff if you have any questions about what qualifies and doesn't qualify in this regard. 
 List each tip that you followed and describe what you did to follow it in your site.
-- (5 points) Describe how your site uses the CRAP principles in the Non-Designer's Design Book readings. 
-Which element received the most emphasis (contrast) on each page? 
-How did you use proximity to organize the visual information on your page? 
-What design elements (colors, fonts, layouts, etc.) did you use repeatedly throughout your site? 
-How did you use alignment to organize information and/or increase contrast for particular elements. 
-Write a paragraph of at least 125 words *for each of the four principles* (four paragraphs, 500 words in total).
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
 ---
 
-## Your Web Application Title
+## To-Do List
 
 A link to your project running on render.
 
 Include a very brief summary of your project here. Images are encouraged, along with concise, high-level text. Be sure to include:
 
-- the goal of the application
-- challenges you faced in realizing the application
-- what authentication strategy you chose to use and why (choosing one because it seemed the easiest to implement is perfectly acceptable)
-- what CSS framework you used and why
-  - include any modifications to the CSS framework you made via custom CSS you authored
+- Allow users to create and edit a private to-do list.
+- I had difficulty with collecting the data from my website and putting it into the MongoDB server.
+- I chose to use a username and login authentication because there were multiple resources online that could walk me through it.
+- I used the bootstrap CSS framework in addition to my own custom CSS. I used these because I believed them to be aesthetically pleasing and thematically match my application.
 
 ## Technical Achievements
-- **Tech Achievement 1**: I used OAuth authentication via the GitHub strategy
+- **Tech Achievement 1**: I implimented a more complex Signup/Login feature that does not allow users to make multiple accounts with the same name and throw descriptive errors when fields are not filled out.
 
 ### Design/Evaluation Achievements
 - **Design Achievement 1**: I followed the following tips from the W3C Web Accessibility Initiative...

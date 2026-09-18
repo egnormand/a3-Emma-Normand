@@ -39,16 +39,25 @@ router.get('/:id', getUser, (req, res) => {
 
 //making one
 router.post('/', async (req, res) => {
-    const user = new User({
-        username: req.body.username,
-        password: req.body.password
-    })
-
     try {
+        const existingUser = await User.findOne({ username: req.body.username })
+
+        if (existingUser) {
+            return res.status(409).json({message: 'That username is already taken'})
+        }
+
+        const user = new User({
+            username: req.body.username,
+            password: req.body.password
+        })
+
         const newUser = await user.save()
         //successful creation status
         res.status(201).json(newUser)
     } catch (err){
+        if (err.code === 11000) {
+            return res.status(409).json({message: 'That username is already taken'})
+        }
         //users fault
         res.status(400).json({message: err.message})
     }
