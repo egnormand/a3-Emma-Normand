@@ -1,0 +1,25 @@
+{
+  "name": "a3-emma-normand",
+  "version": "1.0.0",
+  "description": "Assignment 3 - Persistence: Two-tier Web Application with Database, Express server, and CSS template\r ===",
+  "homepage": "https://github.com/EmmaNormand/a3-Emma-Normand#readme",
+  "bugs": {
+    "url": "https://github.com/EmmaNormand/a3-Emma-Normand/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmaNormand/a3-Emma-Normand.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.0"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  }
+}

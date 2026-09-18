@@ -1,0 +1,188 @@
+#error-message{
+    color: red;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #3d4c3d;
+    font: Inconsolata;
+}
+
+a {
+    color: #838da9;
+    font: Inconsolata;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{ /*background image*/
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(hwb(233 25% 58%), rgb(63, 108, 94));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+
+.todo-app{ /*todo box*/
+    width: 100%;
+    max-width: 540px;
+    background: #D3EED4;
+    margin: 100px auto 20px; /*horizontal centering*/
+    padding: 30px 30px 30px;
+    border-radius: 10px;
+}
+
+.todo-app h2{ /*header style*/
+    color: #304157;
+    background-color: #c0dac0;
+    display: flex;
+    font-size: 50px;
+    font-family: "Exo 2";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 15px;;
+}
+
+.todo-app h2 img{ /*makes images in a header smaller to fit text size*/
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.todo-app h3{
+    color: #304157;
+    display: flex;
+    font-size: 20px;
+    font-family: "Exo 2";
+    align-items: center;
+    margin: 15px 0px 10px;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #c0dac0;
+    border-radius: 15px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Inconsolata";
+}
+
+button{
+    display: block;
+    margin: 10px auto 30px;
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #838da9;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: "Inconsolata";
+}
+
+ul li{
+    list-style: none;
+    font-size: 20px;
+    font-family: "Inconsolata";
+    color: #3d4c3d;
+    padding: 12px 48px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    overflow-wrap: anywhere;
+}
+
+ul li .due-countdown{
+    display: block;
+    margin-top: 4px;
+    color: #3d4c3d;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-image: url(images/uncheck.png);
+    background-size: cover;
+    background-position: center;
+    top: 4px;
+    left: 3px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+/*x box hover color*/
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/*x box hover color*/
+ul li span:hover{
+    background: #c0dac0;
+}
+
+ul li .edit-input{
+   display: block;
+   width: calc(100% - 40px);
+   height: 24px;
+   padding: 0;
+   border: none;
+   border-bottom: 1px solid #555;
+   outline: none;
+   background: transparent;
+   color: inherit;
+   font: inherit;
+   line-height: inherit;
+}
+
+.footer{
+    text-align: center;
+    background: #D3EED4;
+    font-family: "Inconsolata";
+    color: #304157
+}

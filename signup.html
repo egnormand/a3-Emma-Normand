@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Signup </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="validation.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2> <img src = "images/butterflyright.gif" alt="blue butterfly"> Create an Account <img src = "images/butterflyright.gif" alt="blue butterfly"></h2>
+            <p id="error-message"></p>
+            <form id="form" novalidate>
+                <div class = "row">
+                    <input required type="text" name="username" id="username-input" placeholder="username...">
+                </div>
+                <div class = "row">
+                    <input required type="password" name="password" id="password-input" placeholder="password...">
+                </div>
+                <div class = "row">
+                    <input required type="password" name="repeat-password" id="repeat-password-input"
+                        placeholder="repeat password...">
+                </div>
+                <button type="submit"> Signup </button>
+            </form>
+            <p> Already have an account? <a href="login.html"> Login </a></p>
+        </div>
+    </div>
+    <footer class="footer">
+        To-Do List | All Rights To The Public!
+    </footer>
+</body>
+</html>

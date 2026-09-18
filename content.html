@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<title>Emma's Epic TODO List!!!</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&display=swap"
+    rel="stylesheet">
+<head>
+
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2 id="todo-header"><img src="images/butterflyright.png" alt="blue butterfly"> Loading... <img
+                    src="images/butterflyright.png" alt="blue butterfly"></h2>
+            <h3> Enter a Task: </h3>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Task...">
+                <input type="text" id="due-date" placeholder="MM/DD/YYYY" inputmode="numeric" maxlength="10"
+                    pattern="\d{2}/\d{2}/\d{4}">
+            </div>
+
+            <button onclick="addTask()">Add</button>
+
+            <h3> Current Tasks:</h3>
+            <ul id="list-container"></ul>
+            <p><a href="Login.html"> Logout </a></p>
+        </div>
+    </div>
+    <script src="list.js"></script>
+    <footer class="footer">
+        To-Do List | All Rights To The Public!
+    </footer>
+</body>
+
+</html>
